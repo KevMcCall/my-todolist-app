@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import './Styles/todolist.css'
+// To Call Components To Page //
+import React, { Component } from 'react';
+import Header from './Components/Header';
+import Submit from './Components/Submit';
+import TodoList from './Components/Todo';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React Now
-        </a>
-      </header>
-    </div>
-  );
+// CTRL Space, Press Enter After Typing //
+
+
+class App extends Component {
+  state = {
+    tasks: ['Task 1 ', 'Task 2 ', 'Task 3 ']
+  };
+
+// Handles Submit Button //
+  handleSubmit = task => {
+  this.setState({tasks: [...this.state.tasks, task]});
 }
 
-export default App;
+  //the delete button //removes an element form the tasks array
+  handleDelete = (index) => {
+    const newArr= [...this.state.tasks];
+    newArr.splice(index, 1); 
+    this.setState({tasks: newArr}); 
+  }
+
+  render() {
+    return(
+      <div className='wrapper'>
+        <div className='card frame'>
+          <Header numTodos={this.state.tasks.length} />
+          <TodoList tasks={this.state.tasks} onDelete={this.handleDelete} />
+          <Submit onFormSubmit={this.handleSubmit} />
+
+
+        </div>
+      </div>
+    );
+  } 
+}
+
+export default App
+
+
+
+
