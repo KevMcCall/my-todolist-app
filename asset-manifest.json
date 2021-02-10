@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my-todolist-app/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/my-todolist-app/static/js/main.2ef1f5ff.chunk.js",
-    "main.js.map": "/my-todolist-app/static/js/main.2ef1f5ff.chunk.js.map",
+    "main.js": "/my-todolist-app/static/js/main.5d99e0cd.chunk.js",
+    "main.js.map": "/my-todolist-app/static/js/main.5d99e0cd.chunk.js.map",
     "runtime-main.js": "/my-todolist-app/static/js/runtime-main.356b7fd0.js",
     "runtime-main.js.map": "/my-todolist-app/static/js/runtime-main.356b7fd0.js.map",
     "static/js/2.6a8048df.chunk.js": "/my-todolist-app/static/js/2.6a8048df.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.356b7fd0.js",
     "static/js/2.6a8048df.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.2ef1f5ff.chunk.js"
+    "static/js/main.5d99e0cd.chunk.js"
   ]
 }
