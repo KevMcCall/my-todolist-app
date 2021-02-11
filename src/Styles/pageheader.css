@@ -1,0 +1,9 @@
+.pageheader {
+    width: 750px;
+    height: 110px;
+    padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    left: 60%;           /* Start at 50% of browser window */
+    margin-left: -325px; /* Go half of width to the left, centering the element */
+}
