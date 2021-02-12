@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import keys from "../.apisecret/keys.js"
+import keys from "../.apisecret/.keys.js"
 import "../Styles/widgets.css"
 
 const api = {
