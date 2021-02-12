@@ -5,6 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './Fonts/Anton-Regular.ttf';
 
+
+
+
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

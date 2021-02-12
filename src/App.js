@@ -1,20 +1,22 @@
-import "./Styles/todolist.css";
+// import "./Styles/todolist.css";
 // To Call Components To Page //
 import React, { Component } from "react";
 import Header from "./Components/Header";
 import Submit from "./Components/Submit";
 import TodoList from "./Components/Todo";
 import PageHeader from "./Components/PageHeader";
+import Widgets from "./Components/Widgets";
+
 
 // CTRL Space, Press Enter After Typing //
 
-
 class App extends Component {
-
-
-
   state = {
-    tasks: [" Bench Press: 3 Set * 6-8 Reps ",  " Pull-Ups: 3 Set * 6-8 Reps ", " Seated Cable Row: 3 Set * 8-10 Reps "],
+    tasks: [
+      " Bench Press: 3 Set * 6-8 Reps ",
+      " Pull-Ups: 3 Set * 6-8 Reps ",
+      " Seated Cable Row: 3 Set * 8-10 Reps ",
+    ],
   };
 
   // Handles Submit Button //
@@ -33,20 +35,21 @@ class App extends Component {
 
   render() {
     return (
+      <>
       
       <div className="wrapper">
         <PageHeader />
+        <div className="widgetapp"><Widgets /></div>
+        
         <div className="card frame">
           <Header numTodos={this.state.tasks.length} />
           <TodoList tasks={this.state.tasks} onDelete={this.handleDelete} />
           <Submit onFormSubmit={this.handleSubmit} />
         </div>
       </div>
+      </>
     );
   }
 }
 
 export default App;
-
-
-{/*  */}
