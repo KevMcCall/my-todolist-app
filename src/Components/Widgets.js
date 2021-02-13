@@ -64,7 +64,7 @@ function Widgets() {
             </div>
             <div className="weather-container">
               <div className="temperature">
-                {Math.round(weather.main.temp)}°C
+                {Math.round(weather.main.temp)}°F
               </div>
               <div className="weather">{weather.weather[0].main}</div>
             </div>
